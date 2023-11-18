@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Dark-cyan);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.iconss {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.iconss svg {
+    position: absolute;
+}
+
+.iconss svg:first-child {
+    left: -500px;
+    top: -500px;
+}
+
+.iconss svg:last-child {
+    right: -500px;
+    bottom: -500px;
+}
+
+.continr {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 10px 10px 10px #00000047;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .continr {
+        width: 350px;
+    }
+}
+
+.continr .top {
+    background-image: url(./images/bg-pattern-card.svg);
+    height: 40%;
+}
+
+.continr .image {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -25%);
+}
+
+.continr .image img {
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.continr .info {
+    margin-top: 50px;
+}
+
+.continr .info h1 {
+    color: var(--Very-dark-desaturated-blue);
+}
+
+
+.continr .info span {
+    color: var(--Dark-gray)
+}
+
+.continr .info span:last-child {
+    font-size: 22px;
+}
+
+.continr .person {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-top: 1px solid var(--Dark-grayish-blue);
+}
+
+.continr .person .col p:first-child {
+    font-weight: bold;
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 20px;
+}
+
+.continr .person .col p:last-child {
+    color: var(--Dark-gray);
+    margin-top: 10px;
+}
